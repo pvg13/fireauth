@@ -156,7 +156,7 @@ pub struct UpdateUser {
 }
 
 // Provider User Info
-#[derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 pub struct ProviderUserInfo {
     pub provider_id: String,
