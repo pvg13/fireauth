@@ -111,7 +111,7 @@ struct UserInfoResponse {
     users: Vec<User>
 }
 
-#[derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 pub struct User {
     pub local_id: String,
